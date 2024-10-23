@@ -1,1 +1,6 @@
 telebot
+random 
+re 
+nltk
+sympy
+spaCy
