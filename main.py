@@ -5,12 +5,12 @@ import http.server
 import socketserver
 import threading
 
-bot = telebot.TeleBot("7256076065:AAFmAQ3xpfwA-ZqvYIuiclHfa36YMrUIxyI")
+bot = telebot.TeleBot("7507770865:AAFDQ0Lbuo5Ca-mTnqSa-dK_UJENs5B2v1Q")
 
 # Inicialización de conjuntos y variables
 users = set()
 groups = set()
-admins = ['7372906088', '6181692448', '5702506445']
+admins = ['7551486576', 'admin2', 'admin3']
 welcome_messages = {}  # Diccionario para almacenar mensajes de bienvenida por grupo
 
 def get_user_id(identifier, chat_id):
@@ -30,10 +30,10 @@ def get_user_id(identifier, chat_id):
 def start_command(message):
     try:
         users.add(message.from_user.id)
-        bot.send_message(message.chat.id, "👋 ¡Hola! Soy tu asistente de grupo. Usa /help para ver los comandos disponibles.")
+        bot.send_message(message.chat.id, "👋 ¡Hi! Soy Makaco 🐒 V.2 tu Bot de seguridad. Usa /help para ver los comandos disponibles.")
 
         keyboard = types.InlineKeyboardMarkup()
-        url_button = types.InlineKeyboardButton(text="«BuzzWire Project»", url="https://t.me/BuzzWireProject")
+        url_button = types.InlineKeyboardButton(text="«Animal Proyects»", url="https://t.me/ZonaFreeCanal")
         keyboard.add(url_button)
         bot.send_message(message.chat.id, "*¡No olvides unirte al canal para estar al tanto de los últimos proyectos! ♥️🙏🏻*", parse_mode='Markdown', reply_markup=keyboard)
     except Exception as e:
