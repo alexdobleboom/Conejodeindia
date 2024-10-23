@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 from telebot.apihelper import ApiException
 
-BOT_TOKEN = 'YOUR_BOT_TOKEN' # Reemplaza con tu token de bot
+BOT_TOKEN = '7507770865:AAFDQ0Lbuo5Ca-mTnqSa-dK_UJENs5B2v1Q' # Reemplaza con tu token de bot
 bot = telebot.TeleBot(BOT_TOKEN)
 
 # Diccionario para almacenar información de los grupos
