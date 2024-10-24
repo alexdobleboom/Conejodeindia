@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 # Variables
 api_id = '24288670'  # Reemplaza con tu API ID
 api_hash = '81c58005802498656d6b689dae1edacc'  # Reemplaza con tu API Hash
-bot_token = '7720485529:AAHEQX7edaOEjqgm4lbw-au4RbwdWWy25HM'  # Reemplaza con tu token del bot
+bot_token = '7507770865:AAFDQ0Lbuo5Ca-mTnqSa-dK_UJENs5B2v1Q'  # Reemplaza con tu token del bot
 
 admins = list(map(int, "7551486576,1155063846,1622367515".split(',')))
 tempadmins = []
@@ -134,7 +134,7 @@ async def continuar(client, message):
         pausados.pop(note)
     await message.reply('Tiempo de todos los VIPs continuado.')
 
-async def canti_user(client, message):
+async def conti_user(client, message):
     parts = message.text.split(' ', 1)
     if len(parts) == 2:
         note = parts[1]
@@ -176,7 +176,7 @@ async def handle_message(client, message):
         await pause_user(client, message)
     elif text.startswith('/continue'):
         await continuar(client, message)
-    elif text.startswith('/cantiuser'):
+    elif text.startswith('/contiuser'):
         await canti_user(client, message)
 
 async def check_expiry():
