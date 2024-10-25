@@ -9,9 +9,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import sqlite3
 
 # Reemplaza estas variables con tu token, api_hash y api_id
-API_ID = "YOUR_API_ID"
-API_HASH = "YOUR_API_HASH"
-BOT_TOKEN = "YOUR_BOT_TOKEN"
+API_ID = "24288670"
+API_HASH = "81c58005802498656d6b689dae1edacc"
+BOT_TOKEN = "7507770865:AAFDQ0Lbuo5Ca-mTnqSa-dK_UJENs5B2v1Q"
 
 # Crea la base de datos si no existe
 db_path = "armadillo_compress.db"
@@ -47,7 +47,7 @@ current_quality = default_quality
 process_info = {}
 
 # Lista de IDs de administradores del bot (inicialmente vacía)
-admins = []
+admins = ["7551486576"]
 
 # Función para verificar si el usuario es administrador
 def is_admin(user_id):
@@ -279,7 +279,7 @@ def worker():
             await app.send_chat_action(chat_id, "upload_document")
             await app.send_message(chat_id, "Procesando video...")
             # Ejecuta ffmpeg para convertir el video con la calidad actual
-            subprocess.run(["ffmpeg", "-i", file, "-map", "0", "-c:v", "libx265", "-c:a", "aac", "-b:a", "60k", f"-preset", "ultrafast", f"-vf", quality, "output.mp4"])
+            subprocess.run(["ffmpeg", "-i", file, "-map", "0", "-c:v", "libx265", "-c:a", "aac", "-b:a", "60k", f"-preset", "ultrafast", f"-vf", quality, "output.mkv"])
             process_info[chat_id]["end_time"] = time.time()
             processed_size = os.path.getsize("output.mp4")
 
@@ -294,7 +294,7 @@ def worker():
                                            f"⏲️ 𝙏𝙞𝙚𝙢𝙥𝙤 𝙙𝙚𝙡 𝙫𝙞𝙙𝙚𝙤: {process_info[chat_id]['video_duration']} segundos\n"
                                            f"🎉 ¡𝙂𝙧𝙖𝙘𝙞𝙖𝙨 𝙥𝙤𝙧 𝙪𝙨𝙖𝙧 𝙖 𝘼𝙧𝙢𝙖𝙙𝙞𝙡𝙡𝙤 𝘾𝙤𝙢𝙥𝙧𝙚𝙨𝙨!🎊")
             os.remove(file)
-            os.remove("output.mp4")
+            os.remove("output.mkv")
         except Exception as e:
             await app.send_message(chat_id, f"Error al procesar el video: {e}")
         finally:
