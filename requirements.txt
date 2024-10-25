@@ -3,4 +3,4 @@ tgcrypto
 ffmpeg-python 
 moviepy 
 pillow 
-thrilling
+threading 
