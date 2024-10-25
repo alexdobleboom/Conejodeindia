@@ -1,7 +1,4 @@
 pyrogram 
 tgcrypto 
 ffmpeg-python 
-moviepy 
-pillow 
-threading 
 sqlite3 
