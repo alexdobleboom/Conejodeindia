@@ -1,3 +1,4 @@
+BeautifulSoup
 pyrogram 
 tgcrypto 
 requests
