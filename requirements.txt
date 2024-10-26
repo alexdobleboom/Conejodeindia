@@ -2,3 +2,4 @@ beautifulsoup4
 pyrogram 
 tgcrypto 
 requests
+tqdm 
