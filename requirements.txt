@@ -1,5 +1,8 @@
-beautifulsoup4
 pyrogram 
 tgcrypto 
-requests
-tqdm 
+ffmpeg-python 
+moviepy 
+pillow 
+telegram 
+sqlite3 
+
