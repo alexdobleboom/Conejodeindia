@@ -4,5 +4,3 @@ ffmpeg-python
 moviepy 
 pillow 
 telegram 
-sqlite3 
-
