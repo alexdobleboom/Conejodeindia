@@ -49,7 +49,7 @@ def init_db():
     conn.close()
 
 # Agregar un usuario autorizado
-def add_authorized_user(7551486576, username, hours=0):
+def add_authorized_user(user_id, username, hours=0):
     conn = sqlite3.connect('user_keys.db')
     cursor = conn.cursor()
     expires_at = datetime.datetime.now() + datetime.timedelta(hours=hours) if hours > 0 else None
@@ -101,7 +101,7 @@ app = Client("compress_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOK
 # Inicializar la base de datos
 init_db()
 
-admin_users = set() # Agregar los IDs de los administradores
+admin_users = set(7551486576) # Agregar los IDs de los administradores
 groups = set()
 
 # Función para comprimir un video en segundo plano
