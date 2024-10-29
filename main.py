@@ -314,8 +314,6 @@ async def compress_video(client, message: Message):
 
     else:
         await app.send_message(chat_id=message.chat.id, text="Responde a un video para comprimirlo.")
-    else:
-        return
       
 @app.on_message(filters.command("help"))
 def help_command(client, message: Message):
