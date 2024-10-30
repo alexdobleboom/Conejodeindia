@@ -6,3 +6,4 @@ pillow
 telegram 
 PyAV
 imageio
+cv2
