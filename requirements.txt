@@ -5,5 +5,4 @@ moviepy
 pillow 
 telegram 
 PyAV
-OpenCV
 imageio
