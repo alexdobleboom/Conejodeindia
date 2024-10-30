@@ -4,3 +4,6 @@ ffmpeg-python
 moviepy 
 pillow 
 telegram 
+PyAV
+OpenCV
+imageio
