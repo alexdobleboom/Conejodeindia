@@ -8,9 +8,6 @@ from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 import ffmpeg
 from moviepy.editor import VideoFileClip
 from PIL import Image
-import av
-import imageio
-import cv2
 import datetime
 
 # Configuración del bot
