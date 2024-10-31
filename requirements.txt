@@ -1,4 +1,4 @@
-pyrogram 
+telebot 
 tgcrypto 
 ffmpeg-python 
 moviepy 
