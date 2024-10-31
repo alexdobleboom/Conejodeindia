@@ -7,9 +7,9 @@ import datetime
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 
-API_ID = 1234567 # Reemplázalo con tu API_ID
-API_HASH = "tu_api_hash" # Reemplázalo con tu API_HASH
-BOT_TOKEN = "tu_token_de_bot" # Reemplázalo con tu token de bot
+API_ID = 24288670 # Reemplázalo con tu API_ID
+API_HASH = "81c58005802498656d6b689dae1edacc" # Reemplázalo con tu API_HASH
+BOT_TOKEN = "7507770865:AAFDQ0Lbuo5Ca-mTnqSa-dK_UJENs5B2v1Q" # Reemplázalo con tu token de bot
 
 # Configuraciones del bot
 DEFAULT_COMPRESSION_SETTINGS = {
