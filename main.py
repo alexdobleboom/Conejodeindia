@@ -19,8 +19,8 @@ from pyrogram.errors import (
 
 # Datos de la API (reemplaza con tus propios datos)
 api_id = 24288670 # Reemplaza con tu API ID
-api_hash = 81c58005802498656d6b689dae1edacc # Reemplaza con tu API Hash
-token = 7507770865:AAFDQ0Lbuo5Ca-mTnqSa-dK_UJENs5B2v1Q" # Reemplaza con tu Token de Bot
+api_hash = "81c58005802498656d6b689dae1edacc" # Reemplaza con tu API Hash
+token = "7507770865:AAFDQ0Lbuo5Ca-mTnqSa-dK_UJENs5B2v1Q" # Reemplaza con tu Token de Bot
 
 # Lista de administradores (reemplaza con los IDs de tus usuarios)
 admins = [7551486576] # Reemplaza con el ID de tu usuario
