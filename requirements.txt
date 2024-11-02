@@ -1,7 +1,1 @@
-pyrogram 
-tgcrypto 
-ffmpeg-python 
-moviepy 
-pillow 
-telegram 
-av
+telebot 
