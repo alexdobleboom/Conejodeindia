@@ -8,8 +8,8 @@ from pyrogram.errors import FloodWait, RPCError
 
 # Datos de la API (reemplaza con tus propios datos)
 api_id = 24288670 # Reemplaza con tu API ID
-api_hash = 81c58005802498656d6b689dae1edacc # Reemplaza con tu API Hash
-token = 7507770865:AAFDQ0Lbuo5Ca-mTnqSa-dK_UJENs5B2v1Q # Reemplaza con tu Token de Bot
+api_hash = "81c58005802498656d6b689dae1edacc" # Reemplaza con tu API Hash
+token = "7507770865:AAFDQ0Lbuo5Ca-mTnqSa-dK_UJENs5B2v1Q" # Reemplaza con tu Token de Bot
 
 # Lista de usuarios administrador (reemplaza con los usernames de Telegram)
 admin_users = ["@TheDemonsuprem", "@Unadmin2"] # Reemplaza con los usernames de tus administradores
