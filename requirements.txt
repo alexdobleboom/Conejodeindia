@@ -1,5 +1,9 @@
 pyrogram 
 tgcrypto 
 requests 
-bs4 
+ffmpeg-python 
+moviepy 
+pillow 
+
+
 
