@@ -1,4 +1,4 @@
-telethon
+pyrogram 
 python-docx
 pypdf2
 tgcrypto 
