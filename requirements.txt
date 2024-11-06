@@ -1,6 +1,7 @@
-pyrogram 
+telethon
+python-docx
+pypdf2
 tgcrypto 
-requests 
-bs4 
+ 
 
 
