@@ -21,9 +21,9 @@ from pypdf import PdfReader, PdfWriter
 # -------------------------------------------------------------------------------------------------------------------- #
 # Credenciales del Bot (No se recomienda guardarlas en el script principal)
 # -------------------------------------------------------------------------------------------------------------------- #
-api_id = "YOUR_API_ID" # Reemplaza con tu API ID
-api_hash = "YOUR_API_HASH" # Reemplaza con tu API HASH
-bot_token = "YOUR_BOT_TOKEN" # Reemplaza con tu Bot Token
+api_id = 24288670 # Reemplaza con tu API ID
+api_hash = "81c58005802498656d6b689dae1edacc" # Reemplaza con tu API HASH
+bot_token = "7507770865:AAFDQ0Lbuo5Ca-mTnqSa-dK_UJENs5B2v1Q" # Reemplaza con tu Bot Token
 # -------------------------------------------------------------------------------------------------------------------- #
 
 # -------------------------------------------------------------------------------------------------------------------- #
