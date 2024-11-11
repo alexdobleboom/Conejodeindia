@@ -1,7 +1,10 @@
-pyrogram 
-python-docx
-pypdf2
+pyrogram
 tgcrypto 
-pypdf 
+numpy 
+opencv-python 
+ffmpeg-python 
+moviepy 
+pillow 
+telegram 
 
 
